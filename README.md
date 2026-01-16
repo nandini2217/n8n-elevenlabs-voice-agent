@@ -2,7 +2,7 @@
 
 AI voice agent built with **n8n** and **ElevenLabs** that understands conversational instructions and automates calendar management.
 
-![n8n Workflow](n8n-workflow-image)
+![n8n Workflow](n8n-workflow-image.png)
 
 ---
 

@@ -1,73 +1,101 @@
-# n8n-elevenlabs-voice-agent
-AI voice agent built with n8n and ElevenLabs
+# 🎙️ n8n ElevenLabs Voice Agent
 
-An intelligent automation agent built with n8n that understands user instructions and automatically: 
+AI voice agent built with **n8n** and **ElevenLabs** that understands conversational instructions and automates calendar management.
 
-  📅 Creates or updates Google Calendar events
-  ⏰ Sends email reminders 10 minutes before events
-  🎙️ Works with conversational / agent-style input
+![n8n Workflow](n8n-workflow-image)
 
+---
 
-🔁 Fully automated workflow
-🚀 Project Overview
+## 🚀 Project Overview
 
-   This project demonstrates how an AI-powered agent can manage calendar tasks automatically.
-   Whatever the user tells the agent (meeting time, date, reminder, etc.), the workflow:
-   Interprets the instruction
-   Updates Google Calendar
-   Triggers an email reminder 10 minutes before the event
+This project demonstrates how an **AI-powered automation agent** can manage calendar tasks end-to-end.
 
+Whatever the user tells the agent (meeting time, date, reminder, etc.), the workflow:
 
-✨ Features
+* 🧠 Interprets the instruction
+* 📆 Creates or updates a Google Calendar event
+* 📧 Sends an email reminder **10 minutes before the event**
 
-   🗣️ Conversational agent input
-   📆 Google Calendar integration
-   📧 Automated email reminders
-   ⏱️ Reminder sent 10 minutes before event
-   🧩 Built entirely using n8n workflow automation
-   🔐 Secure credential handling (no hardcoded secrets)
+All of this is handled automatically using **n8n workflows**.
 
+---
 
-🛠️ Tech Stack
+## ✨ Features
 
-   n8n – Workflow automation
-   Google Calendar API
-   Email service (SMTP / Gmail)
-   AI Agent logic
-   Webhook / Trigger nodes
+* 🗣️ Conversational / agent-style input
+* 📆 Google Calendar integration
+* 📧 Automated email reminders
+* ⏱️ Reminder sent 10 minutes before the event
+* 🔁 Fully automated workflow
+* 🧩 Built entirely using n8n workflow automation
+* 🔐 Secure credential handling (no hardcoded secrets)
 
+---
 
-🔄 How It Works
+## 🛠️ Tech Stack
 
-   User gives an instruction to the agent
-   Example: “Schedule a meeting tomorrow at 3 PM”
-   n8n processes the input
-   Event is created/updated in Google Calendar
-   A reminder email is automatically sent 10 minutes before the event
+* **n8n** – Workflow automation
+* **ElevenLabs** – Voice / conversational input
+* **Google Calendar API**
+* **Email Service** – SMTP / Gmail
+* **AI Agent Logic**
+* **Webhook / Trigger Nodes**
 
+---
 
-⚙️ Setup Instructions
+## 🔄 How It Works
 
-1️) Clone the Repository
+1. User gives an instruction to the agent
+   **Example:** *"Schedule a meeting tomorrow at 3 PM"*
+2. n8n processes the conversational input
+3. The event is created or updated in Google Calendar
+4. An email reminder is automatically sent **10 minutes before the event**
 
-2️) Import Workflow into n8n
-Open n8n
-Click Import Workflow
-Upload:
-workflows/calendar-agent-workflow.json
+---
 
-3️)Configure Credentials
-Add the following credentials in n8n:
-Google Calendar OAuth
-Email (SMTP / Gmail)
+## ⚙️ Setup Instructions
 
+### 1️⃣ Clone the Repository
 
-🔐 Security Notes
+```bash
+git clone <repository-url>
+```
 
-No API keys are included in this repository
-All credentials are handled via n8n credentials manager
-Safe to use in production with proper OAuth setup
+### 2️⃣ Import Workflow into n8n
 
+1. Open **n8n**
+2. Click **Import Workflow**
+3. Upload:
 
-⭐ If you like this project
-Give it a ⭐ and feel free to fork or improve it!
+   ```
+   workflows/calendar-agent-workflow.json
+   ```
+
+### 3️⃣ Configure Credentials
+
+Add the following credentials in **n8n Credentials Manager**:
+
+* ✅ Google Calendar (OAuth)
+* ✅ Email (SMTP / Gmail)
+
+---
+
+## 🔐 Security Notes
+
+* ❌ No API keys are included in this repository
+* 🔐 All credentials are securely managed via **n8n Credentials Manager**
+* ✅ Safe to use in production with proper OAuth configuration
+
+---
+
+## ⭐ Support
+
+If you like this project:
+
+* ⭐ Star the repository
+* 🍴 Fork it
+* 🛠️ Feel free to improve or extend the workflow
+
+---
+
+Happy automating! 🚀
